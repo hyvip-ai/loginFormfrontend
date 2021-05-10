@@ -1,0 +1,13 @@
+<div class="card">
+    <div class="card-header">
+      User Dashboard
+    </div>
+    <div class="card-body">
+      <h5 class="card-title" *ngIf='name'>Welcome <p>{{name}}</p></h5>
+      <h5 class="card-title" *ngIf='email'>your email is <p>{{email}}</p></h5>
+      <h5 class="card-title" *ngIf='token'>your toke is: <p>{{token}}</p></h5>
+
+      <p class="card-text">This Is just a practice Project</p>
+      <a  class="btn btn-primary" (click)="logout()">Log Out</a>
+    </div>
+  </div>

@@ -1,0 +1,16 @@
+<div *ngIf='messege' style="margin-top: 60px; text-align: center;"><h1>{{messege}}</h1> </div>
+
+<form [formGroup]='loginform'>
+    <div class="form-floating mb-3">
+        <input formControlName='email' type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+        <label for="floatingInput">Email address</label>
+      </div>
+      <div class="form-floating">
+        <input formControlName='password' type="password" class="form-control" id="floatingPassword" placeholder="Password">
+        <label for="floatingPassword">Password</label>
+      </div>
+      <div class="col-12">
+        <button type="submit" class="btn btn-primary" [disabled]= "!loginform.valid" (click)="login()">Sign in</button>
+        <button class="btn btn-primary" (click) = "gotoregister()">Goto Register</button>
+      </div>
+</form>

@@ -1,0 +1,9 @@
+<p>status works!</p>
+
+<button (click)="info()">Get Data</button>
+
+<div *ngIf="myinfo">
+    <p>Name:{{myinfo.name}}</p>
+    <p>Version:{{myinfo.version}}</p>
+    <p>developedBy:{{myinfo.developedBy}}</p>
+</div>

@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "Form"
+  "defaultProject": "Form",
+  "cli": {
+    "analytics": "22a94d69-569d-46c1-99be-9a065990501f"
+  }
 }
